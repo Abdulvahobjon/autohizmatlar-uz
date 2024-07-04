@@ -1,0 +1,19 @@
+{
+  "name": "new-folder-(4)",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000a\u0000u\u0000t\u0000o\u0000h\u0000i\u0000z\u0000m\u0000a\u0000t\u0000l\u0000a\u0000r\u0000-\u0000u\u0000z\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set TAILWIND_MODE=watch&postcss src/styles.css -o ./public/css/styles.css -w --verbose",
+    "build": "postcss tailwindcss ./src/styles.css -o ./public/css/styles.css"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.4"
+  }
+}
