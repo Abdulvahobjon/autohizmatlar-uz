@@ -657,8 +657,8 @@ video {
 .top-\[-101px\] {
   top: -101px;
 }
-.top-\[-109px\] {
-  top: -109px;
+.top-\[-111px\] {
+  top: -111px;
 }
 .top-\[-132px\] {
   top: -132px;
@@ -698,6 +698,12 @@ video {
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 .mx-auto {
   margin-left: auto;
@@ -913,9 +919,6 @@ video {
 }
 .h-0 {
   height: 0px;
-}
-.h-0\.5 {
-  height: 0.125rem;
 }
 .h-1 {
   height: 0.25rem;
@@ -1288,9 +1291,6 @@ video {
 .max-w-\[141px\] {
   max-width: 141px;
 }
-.max-w-\[142px\] {
-  max-width: 142px;
-}
 .max-w-\[143px\] {
   max-width: 143px;
 }
@@ -1375,6 +1375,9 @@ video {
 .max-w-\[320px\] {
   max-width: 320px;
 }
+.max-w-\[334px\] {
+  max-width: 334px;
+}
 .max-w-\[344px\] {
   max-width: 344px;
 }
@@ -1389,6 +1392,9 @@ video {
 }
 .max-w-\[389px\] {
   max-width: 389px;
+}
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 .max-w-\[413px\] {
   max-width: 413px;
@@ -1456,6 +1462,12 @@ video {
 .max-w-none {
   max-width: none;
 }
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
 .translate-x-5 {
   --tw-translate-x: 1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1512,6 +1524,9 @@ video {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1764,7 +1779,9 @@ video {
 .border-\[\#0000001A\] {
   border-color: #0000001A;
 }
-
+.border-\[\#0000001\] {
+  border-color: #0000001;
+}
 .border-\[\#0000005b\] {
   border-color: #0000005b;
 }
@@ -1860,10 +1877,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(241 243 249 / var(--tw-bg-opacity));
 }
-.bg-\[\#F2F2F2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
-}
 .bg-\[\#FAFAFC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 252 / var(--tw-bg-opacity));
@@ -1901,6 +1914,10 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -2357,9 +2374,6 @@ video {
 .pr-1\.5 {
   padding-right: 0.375rem;
 }
-.pr-10 {
-  padding-right: 2.5rem;
-}
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -2748,9 +2762,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 @font-face {
     font-family: 'satoshi';
-    src: url('../fonts/Satoshi-Bold.woff2');
+    src: url('../fonts/Satoshi-Regular.woff2');
 }
 
 body {
@@ -3103,10 +3118,6 @@ body {
     height: 0.75rem;
   }
 
-  .max-md\:h-\[30px\] {
-    height: 30px;
-  }
-
   .max-md\:h-\[97px\] {
     height: 97px;
   }
@@ -3141,10 +3152,6 @@ body {
 
   .max-md\:max-w-\[280px\] {
     max-width: 280px;
-  }
-
-  .max-md\:max-w-\[30px\] {
-    max-width: 30px;
   }
 
   .max-md\:max-w-\[313px\] {
@@ -3319,6 +3326,10 @@ body {
 
   .sm\:max-h-\[188px\] {
     max-height: 188px;
+  }
+
+  .sm\:max-w-\[300px\] {
+    max-width: 300px;
   }
 
   .sm\:grid-cols-2 {
@@ -3589,6 +3600,10 @@ body {
     width: 63px;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-10 {
     max-width: 2.5rem;
   }
@@ -3655,6 +3670,18 @@ body {
 
   .md\:max-w-none {
     max-width: none;
+  }
+
+  .md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .md\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .md\:max-w-\[250px\] {
+    max-width: 250px;
   }
 
   .md\:cursor-pointer {
@@ -4144,6 +4171,10 @@ body {
     max-width: 391px;
   }
 
+  .lg\:max-w-\[410px\] {
+    max-width: 410px;
+  }
+
   .lg\:max-w-\[413px\] {
     max-width: 413px;
   }
@@ -4154,6 +4185,14 @@ body {
 
   .lg\:max-w-\[578px\] {
     max-width: 578px;
+  }
+
+  .lg\:max-w-\[310px\] {
+    max-width: 310px;
+  }
+
+  .lg\:max-w-\[400px\] {
+    max-width: 400px;
   }
 
   .lg\:grid-cols-2 {
@@ -4333,3 +4372,4 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
