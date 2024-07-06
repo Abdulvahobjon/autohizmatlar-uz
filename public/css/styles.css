@@ -3341,6 +3341,18 @@ body {
     max-width: 300px;
   }
 
+  .sm\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
+  .sm\:max-w-\[240px\] {
+    max-width: 240px;
+  }
+
+  .sm\:max-w-\[220px\] {
+    max-width: 220px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3691,6 +3703,10 @@ body {
 
   .md\:max-w-\[250px\] {
     max-width: 250px;
+  }
+
+  .md\:max-w-\[240px\] {
+    max-width: 240px;
   }
 
   .md\:cursor-pointer {
