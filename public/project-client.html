@@ -520,7 +520,7 @@
 
                             Categories
                         </span>
-                        <span>
+                        <span id="categories_icon" class="transition-all duration-300">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2" stroke-linecap="round"
@@ -528,265 +528,382 @@
                             </svg>
                         </span>
                     </button>
-                    <div class="w-full mb-4">
-                        <button id="accordionButton1"
-                            class="w-full flex items-center justify-between text-left text-[#202020] font-bold text-base bg-[#FAFAFC] py-2 px-3 rounded-xl mb-2">
-                            Creation and <br> improvement of sites
-                            <span id="accordionIcon1" class="duration-300 transition-all">
-                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </button>
-                        <ul id="accordionContent1" class="accordion-content border-l border-l-[#F2F2F2]">
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                    <div id="categories_content" class="transition-all duration-300 max-h-0 overflow-hidden">
+                        <div class="w-full mb-4">
+                            <button id="accordionButton1"
+                                class="w-full flex items-center justify-between text-left text-[#202020] font-bold text-base bg-[#FAFAFC] py-2 px-3 rounded-xl mb-2">
+                                Creation and <br> improvement of sites
+                                <span id="accordionIcon1" class="duration-300 transition-all">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
+                                        <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
-                                Improving and adjusting the site
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                Site improvement
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                Site protection and repair
-                            </li>
-                            <li class="text-[#202020] -translate-x-[1.5px] font-bold text-sm flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                <div class="w-full">
-                                    <button id="accordionButton2"
-                                        class="bg-[#F1F3F9] cursor-pointer flex items-center justify-between py-2.5 px-3 w-full rounded-xl mb-3">
-                                        Speed up the site
-                                        <span id="accordionIcon2" class="duration-300 transition-all">
-                                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                            </button>
+                            <ul id="accordionContent1" class="accordion-content border-l border-l-[#F2F2F2]">
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Improving and adjusting the site
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Site improvement
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Site protection and repair
+                                </li>
+                                <li
+                                    class="text-[#202020] -translate-x-[1.5px] font-bold text-sm flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <div class="w-full">
+                                        <button id="accordionButton2"
+                                            class="bg-[#F1F3F9] cursor-pointer flex items-center justify-between py-2.5 px-3 w-full rounded-xl mb-3">
+                                            Speed up the site
+                                            <span id="accordionIcon2" class="duration-300 transition-all">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.81836 10L5.81836 5.5L1.81836 1" stroke="#202020"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul id="accordionContent2" class="accordion-content flex flex-col gap-2">
+                                            <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                            <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                            <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                            <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                            <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Plugins and themes
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Improving and customizing the site
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    E-commerce
+                                </li>
+                                <li
+                                    class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
+                                    <span>
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    Error correction
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-5 pl-3">
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Creating sites
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.81836 10L5.81836 5.5L1.81836 1" stroke="#202020"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </span>
                                     </button>
-                                    <ul id="accordionContent2" class="accordion-content flex flex-col gap-2">
-                                        <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                        <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                        <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                        <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                        <li class="pl-5 text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                Plugins and themes
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                Improving and customizing the site
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                E-commerce
-                            </li>
-                            <li
-                                class="text-[#9CA5B3] -translate-x-[1.5px] font-bold text-sm py-2 flex items-center gap-3">
-                                <span>
-                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1V1C1 5.97056 5.02944 10 10 10H12.8548" stroke="#F2F2F2"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </span>
-                                Error correction
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Site dialing
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Desktop programming
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Scripts & bots
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Mobile applications
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Games
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                                <li class="text-[#202020] font-bold text-base cursor-pointer">
+                                    <button
+                                        class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
+                                        Telegram bots
+                                        <span>
+                                            <svg class="accordion___icon transition-all duration-300" width="11"
+                                                height="6" viewBox="0 0 11 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <ul
+                                        class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                        <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2.5 mb-5">
+                    <h3 class="text-[#9CA5B3] uppercase font-bold text-xs mb-[15px]">project DETAILS</h3>
+                    <div class="mb-[15px]">
+                        <div class="flex items-center gap-2 text-[#202020] font-bold text-base mb-1.5">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.53 10.1625C13.215 10.47 13.035 10.9125 13.08 11.385C13.1475 12.195 13.89 12.7875 14.7 12.7875H16.125V13.68C16.125 15.2325 14.8575 16.5 13.305 16.5H4.695C3.1425 16.5 1.875 15.2325 1.875 13.68V8.63251C1.875 7.08001 3.1425 5.8125 4.695 5.8125H13.305C14.8575 5.8125 16.125 7.08001 16.125 8.63251V9.71251H14.61C14.19 9.71251 13.8075 9.87749 13.53 10.1625Z"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1.875 9.30455V5.87709C1.875 4.98459 2.4225 4.18955 3.255 3.87455L9.21 1.62455C10.14 1.27205 11.1375 1.96208 11.1375 2.95958V5.80957"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.9191 10.4759V12.021C16.9191 12.4335 16.5891 12.7709 16.1691 12.7859H14.6991C13.8891 12.7859 13.1466 12.1934 13.0791 11.3834C13.0341 10.9109 13.2141 10.4684 13.5291 10.1609C13.8066 9.87592 14.1891 9.71094 14.6091 9.71094H16.1691C16.5891 9.72594 16.9191 10.0634 16.9191 10.4759Z"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M5.25 9H10.5" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                            Budget
+                        </div>
+                        <div class="grid grid-cols-2 items-center gap-1.5">
+                            <input
+                                class="bg-[#FAFAFC] rounded-xl placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#202020] font-medium text-sm outline-none border-none py-3 px-4"
+                                placeholder="From...UZS" type="text">
+                            <input
+                                class="bg-[#FAFAFC] rounded-xl placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#202020] font-medium text-sm outline-none border-none py-3 px-4"
+                                placeholder="To...UZS" type="text">
+                        </div>
+                    </div>
+                    <div class="mb-[15px]">
+                        <div class="flex items-center gap-2 text-[#202020] font-bold text-base mb-1.5">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 9.75V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5H9.75"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.49756 10.8678L7.28256 8.55031C7.53756 8.22031 8.01007 8.16032 8.34007 8.41532L9.71258 9.49532C10.0426 9.75032 10.5151 9.69032 10.7701 9.36782L12.5026 7.13281"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M14.6099 11.8631L14.8199 12.2906C14.9249 12.5006 15.1874 12.6956 15.4199 12.7406L15.7049 12.7856C16.5599 12.9281 16.7624 13.5581 16.1474 14.1806L15.8849 14.4431C15.7124 14.6231 15.6149 14.9681 15.6674 15.2081L15.7049 15.3656C15.9374 16.4006 15.3899 16.7981 14.4899 16.2581L14.2949 16.1456C14.0624 16.0106 13.6874 16.0106 13.4549 16.1456L13.2599 16.2581C12.3524 16.8056 11.8049 16.4006 12.0449 15.3656L12.0824 15.2081C12.1349 14.9681 12.0374 14.6231 11.8649 14.4431L11.6024 14.1806C10.9874 13.5581 11.1899 12.9281 12.0449 12.7856L12.3299 12.7406C12.5549 12.7031 12.8249 12.5006 12.9299 12.2906L13.1399 11.8631C13.5449 11.0456 14.2049 11.0456 14.6099 11.8631Z"
+                                        stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                            Hiring %
+                        </div>
+                        <div>
+                            <input
+                                class="bg-[#FAFAFC] rounded-xl placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#202020] font-medium text-sm outline-none border-none py-3 px-4 w-full"
+                                placeholder="From" type="text">
+                        </div>
                     </div>
                     <div>
-                        <ul class="flex flex-col gap-5 pl-3">
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Creating sites
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Site dialing
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Desktop programming
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Scripts & bots
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Mobile applications
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Games
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                            <li class="text-[#202020] font-bold text-base cursor-pointer">
-                                <button class="accordion___button flex items-baseline justify-between text-left mb-3 w-full">
-                                    Telegram bots
-                                    <span>
-                                        <svg class="accordion___icon transition-all duration-300" width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="accordion___content flex flex-col gap-2 pl-3 transition-all duration-300 max-h-0 overflow-hidden">
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                    <li class="text-[#9CA5B3] font-bold text-sm">lorem</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div class="flex items-center gap-2 text-[#202020] font-bold text-base mb-1.5">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7494 15.7484L12.5244 12.5234" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </span>
+                            <span class="flex items-center gap-1" >
+                            Search by keyword
+ 
+                                <svg class="cursor-pointer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00016 14.6693C11.6668 14.6693 14.6668 11.6693 14.6668 8.0026C14.6668 4.33594 11.6668 1.33594 8.00016 1.33594C4.3335 1.33594 1.3335 4.33594 1.3335 8.0026C1.3335 11.6693 4.3335 14.6693 8.00016 14.6693Z" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5.33594V8.66927" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.99609 10.6641H8.00208" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </span>
+                        </div>
+                        <div>
+                            <input
+                                class="bg-[#FAFAFC] rounded-xl placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#202020] font-medium text-sm outline-none border-none py-3 px-4 w-full"
+                                placeholder="Type the keyword" type="text">
+                        </div>
                     </div>
-                
+                </div>
+                <div>
+                    
                 </div>
             </div>
 
