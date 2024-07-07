@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mobile Category Menu</title>
+</head>
+<body>
+
+<!-- Menu button -->
+<button id="categry_mobile_btn" class="fixed top-4 right-4 z-50 bg-blue-500 text-white px-4 py-2 rounded">Open Menu</button>
+
+<!-- Mobile category menu -->
+<div id="category_mobile" class="transition-all duration-300 w-full h-full fixed top-0 -left-full bg-white p-3 overflow-auto z-30">
+    <button class="close__filter absolute top-4 right-4 bg-gray-300 px-2 py-1 rounded">Close</button>
+    <!-- Menu content -->
+    <ul class="mt-16">
+        <li class="py-2">Category 1</li>
+        <li class="py-2">Category 2</li>
+        <li class="py-2">Category 3</li>
+        <li class="py-2">Category 4</li>
+    </ul>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // JavaScript to toggle menu visibility
+    let categry_mobile_btn = document.querySelector('#categry_mobile_btn');
+    let category_mobile = document.querySelector('#category_mobile');
+    let close__filter = document.querySelector('.close__filter');
+
+    categry_mobile_btn.addEventListener('click', function() {
+        category_mobile.classList.add('left-0');
+        category_mobile.classList.remove('-left-full');
+        document.body.classList.add('overflow-hidden'); // Prevent scrolling on body
+    });
+
+    close__filter.addEventListener('click', function() {
+        category_mobile.classList.remove('left-0');
+        category_mobile.classList.add('-left-full');
+        document.body.classList.remove('overflow-hidden'); // Re-enable scrolling on body
+    });
+</script>
+
+</body>
+</html>

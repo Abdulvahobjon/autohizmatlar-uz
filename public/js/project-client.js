@@ -59,3 +59,22 @@ document.getElementById('categories_btn').addEventListener('click', function() {
       categoriesIcon.classList.toggle('rotate-180')
   }
 });
+
+
+let categry_mobile_btn = document.querySelector('#categry_mobile_btn');
+let category_mobile = document.querySelector('#category_mobile');
+let close__filter = document.querySelector('.close__filter');
+
+categry_mobile_btn.addEventListener('click', function () {
+    category_mobile.classList.add('left-0');
+    category_mobile.classList.remove('-left-full');
+    document.body.classList.add('overflow-hidden');
+    document.body.classList.add('h-screen');
+});
+
+close__filter.addEventListener('click', function () {
+    category_mobile.classList.remove('left-0');
+    category_mobile.classList.add('-left-full');
+    document.body.classList.remove('overflow-hidden');
+    document.body.classList.remove('h-screen');
+});
