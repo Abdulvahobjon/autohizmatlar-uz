@@ -153,3 +153,32 @@ accordionButton2.addEventListener('click', () => {
     accordionContent2.classList.toggle('open');
     accordionIcon2.classList.toggle('rotate-90');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.accordion___button');
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('.accordion___icon');
+
+          if (content.classList.contains('max-h-[800px]')) {
+              content.classList.remove('max-h-[800px]');
+              content.classList.add('max-h-0');
+              icon.classList.remove('rotate-180');
+          } else {
+              document.querySelectorAll('.accordion___content').forEach(item => {
+                  item.classList.remove('max-h-[800px]');
+                  item.classList.add('max-h-0');
+              });
+
+              document.querySelectorAll('.accordion___icon').forEach(item => {
+                  item.classList.remove('rotate-180');
+              });
+
+              content.classList.remove('max-h-0');
+              content.classList.add('max-h-[800px]');
+              icon.classList.add('rotate-180');
+          }
+      });
+  });
+});
