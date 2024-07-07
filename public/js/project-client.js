@@ -86,8 +86,8 @@ catergories__top.forEach(function (item, index) {
               catergories[index].style.height = '45px';
           }, 0);
       }
-      catergories[index].classList.toggle("overflow-hidden")
-      catergories[index].classList.toggle("overflow-auto")
+      // catergories[index].classList.toggle("overflow-hidden")
+      // catergories[index].classList.toggle("overflow-auto")
       catergories__right.classList.toggle("md:min-h-[1663px]");
       catergories__right.classList.toggle("min-h-[843px]");
       catergories__right.classList.toggle("md:min-h-[871px]");
