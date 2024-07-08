@@ -9,16 +9,6 @@ function create_new_project(params) {
         ".catergories__bottom__arrow"
     );
 
-    catergori__bottom__btn.forEach(function (item, index) {
-        item.addEventListener("click", function () {
-            catergori__bottom__btn[index].classList.toggle("mb-3");
-            catergories__bottom__select[index].classList.toggle("h-[40px]");
-            catergories__bottom__select[index].classList.toggle("h-[90px]");
-            catergories__bottom__arrow[index].classList.toggle("rotate-180");
-        });
-    });
-
-
     let files = []
 
     document.querySelector('.sectFileClass').addEventListener('change', function (event) {
