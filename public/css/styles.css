@@ -3936,6 +3936,10 @@ body {
     padding-top: 30px;
   }
 
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .md\:text-center {
     text-align: center;
   }
@@ -4237,6 +4241,11 @@ body {
   .lg\:py-\[22px\] {
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .lg\:pb-14 {
