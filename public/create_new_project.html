@@ -11,9 +11,24 @@
 </head>
 <style>
     .black_checkbox {
-        width: 18px;
-        height: 18px;
+        width: 18px !important;
+        height: 18px !important;
         accent-color: #202020;
+    }
+
+    @media (max-width: 1195px) {
+        #new_project-btns {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .max-width-318px{
+            max-width: 250px !important;
+            width: 100%;
+        }
+    }
+
+    .transition-all {
+        transition: all .3s ease-in-out;
     }
 </style>
 
@@ -293,8 +308,16 @@
             <h1 class="md:text-[43px] text-2xl font-bold text-center mb-5">Describe what needs to be done</h1>
 
             <div class="flex lg:flex-row flex-col gap-[10px]">
-                <div
-                    class="lg:max-w-[318px] w-full h-full bg-transparent border-[#0000001] border-[1px] rounded-3xl md:px-5 px-3 md:py-[15px] py-3">
+                <div class="lg:max-w-[318px] max-width-318px hidden lg:block w-full h-full bg-transparent border-[#0000001] border-[1px] rounded-3xl md:px-5 px-3 md:py-[15px] py-3">
+                    <h3 class="text-[#202020] text-sm font-bold  mb-3">Post your task on the exchange.</h3>
+                    <p class="text-[#202020] text-sm  mb-3">Your project will become visible to thousands of
+                        freelancers, and some of them will make you
+                        offers. Study their ratings, portfolios and choose the best of them</p>
+                    <p class="text-[#202020] text-sm font-medium"><span class="text-[#202020] text-sm font-bold">Confirm
+                            your order when you are 100% satisfied with the result.</span> Only after this the
+                        payment will be debited in favor of the selle</p>
+                </div>
+                <div class="lg:max-w-[318px]  lg:hidden w-full h-full bg-transparent border-[#0000001] border-[1px] rounded-3xl md:px-5 px-3 md:py-[15px] py-3">
                     <h3 class="text-[#202020] text-sm font-bold  mb-3">Post your task on the exchange.</h3>
                     <p class="text-[#202020] text-sm  mb-3">Your project will become visible to thousands of
                         freelancers, and some of them will make you
@@ -304,7 +327,7 @@
                         payment will be debited in favor of the selle</p>
                 </div>
 
-                <div class="w-full">
+                <div class="lg:w-[704px] w-full">
                     <div class="bg-[#fff] md:px-6 md:py-4 py-[10px] px-[10px] rounded-3xl mb-[10px]">
                         <div class="flex items-center justify-between mb-[13px]">
                             <div class="flex items-center gap-2">
@@ -350,7 +373,7 @@
                             <input id="titleTextarea" autocomplete="off"
                                 class="bg-transparent text-[#202020] font-medium text-base px-4 py-4 w-full  outline-none resize-none placeholder:text-[#9CA5B3] placeholder:font-medium"
                                 placeholder="Write the title here"></input>
-                            <div class="w-[200px] md:inline-block hidden">
+                            <div class="lg:w-[300px]  md:w-[200px] text-center md:inline-block hidden">
                                 <span id="charCountDesktop" class="text-[#9CA5B3] text-sm font-medium">0 of 70
                                     characters</span>
                             </div>
@@ -404,13 +427,15 @@
                                 maxlength="500"
                                 placeholder="Describe what exactly you need, in what volume and in what time frame"></textarea>
                             <div class="w-[157px] md:inline-block hidden absolute right-0">
-                                <span id="descCharCountDesktop" class="text-[#9CA5B3] text-sm font-medium">0 of 500 characters</span>
+                                <span id="descCharCountDesktop" class="text-[#9CA5B3] text-sm font-medium">0 of 500
+                                    characters</span>
                             </div>
                         </div>
                         <div class="w-full text-end md:hidden">
-                            <span id="descCharCountMobile" class="text-[#9CA5B3] text-sm font-medium">0 of 500 characters</span>
+                            <span id="descCharCountMobile" class="text-[#9CA5B3] text-sm font-medium">0 of 500
+                                characters</span>
                         </div>
-                        
+
 
                         <div class="text-[#FF8E8E] flex text-xs gap-3">
                             <svg class="cursor-pointer" width="36" viewBox="0 0 24 24" fill="none"
@@ -534,29 +559,34 @@
                             <span class="text-[#9CA5B3] font-medium">UZS</span>
                         </div>
 
-                        <div class="flex gap-2 mb-4 px-4">
-                            <input id="I_am_ready_to_consider" type="checkbox" class="black_checkbox">
-                            <label for="I_am_ready_to_consider" class="text-[#575E6A] text-sm font-bold">
-                                I am ready to consider offers with a higher price if the level of the performer
-                                is higher
-                            </label>
-                        </div>
-
-                        <div class="flex md:flex-row flex-col gap-6 px-4 mb-4">
-
-                            <div class="flex gap-2">
-                                <input id="I_am_ready_to_consider2" type="checkbox" class="black_checkbox">
-                                <label for="I_am_ready_to_consider2" class="text-[#575E6A] text-sm font-bold">
-                                    Only for PRO ⭐️
+                        <div class="flex flex-col gap-6 px-4 mb-4">
+                            <div class="flex gap-2 items-center">
+                                <div class="w-[18px] h-[18px]" >
+                                <input id="I_am_ready_to_consider" type="checkbox" class="block black_checkbox">
+                                </div>
+                                <label for="I_am_ready_to_consider" class="text-[#202020] text-sm font-bold">
+                                    I am ready to consider offers with a higher price if the level of the performer is
+                                    higher
                                 </label>
                             </div>
 
-                            <div class="flex gap-2">
-                                <input id="I_am_ready_to_consider3" type="checkbox" class="black_checkbox">
-                                <label for="I_am_ready_to_consider3"
-                                    class="flex items-center gap-1 text-[#575E6A] text-sm font-bold">
+                           <div class="md:flex items-center gap-6" >
+                            <div class="flex gap-2 items-center">
+                                <div class="w-[18px] h-[18px]" >
+                                    <input id="I_am_ready_to_consider2" type="checkbox" class="block black_checkbox">
+                                    </div>
+                                <label for="I_am_ready_to_consider2" class="text-[#202020] text-sm font-bold">
+                                    Only for PRO
+                                </label>
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <div class="w-[18px] h-[18px]" >
+                                    <input id="I_am_ready_to_consider3" type="checkbox" class="block black_checkbox">
+                                    </div>
+                                <label for="I_am_ready_to_consider3" class=" text-[#202020] text-sm font-bold">
                                     Only for Verified Members
-                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    <svg class="inline-block" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M13.3346 9.16957C13.3346 12.5029 11.0013 14.1696 8.22797 15.1362C8.08274 15.1855 7.92499 15.1831 7.7813 15.1296C5.0013 14.1696 2.66797 12.5029 2.66797 9.16957V4.5029C2.66797 4.32609 2.73821 4.15652 2.86323 4.0315C2.98826 3.90648 3.15782 3.83624 3.33464 3.83624C4.66797 3.83624 6.33464 3.03624 7.49464 2.0229C7.63587 1.90224 7.81554 1.83594 8.0013 1.83594C8.18707 1.83594 8.36673 1.90224 8.50797 2.0229C9.67464 3.0429 11.3346 3.83624 12.668 3.83624C12.8448 3.83624 13.0143 3.90648 13.1394 4.0315C13.2644 4.15652 13.3346 4.32609 13.3346 4.5029V9.16957Z"
@@ -567,6 +597,7 @@
                                     </svg>
                                 </label>
                             </div>
+                           </div>
                         </div>
                     </div>
 
@@ -612,39 +643,64 @@
 
 
 
-                        <div class="flex sm:flex-row flex-col gap-[10px]">
-                            <div
-                                class="catergories__bottom__select w-full border-[#0000005b] border-[1px] rounded-xl  transition-all duration-300 overflow-hidden h-[49px] pl-3 pr-4 ">
+                        <div id="new_project-btns" class="grid lg:grid-cols-2 items-start max-md:grid-cols-1 gap-2.5">
+                            <div class="border border-[#0000001A] rounded-xl pt-2 pb-1">
                                 <button
-                                    class="catergori__bottom__btn  transition-all duration-300  py-3 w-full flex items-center justify-between font-bold text-sm text-[#202020] ">
+                                    class="catergories__bottom__select w-full text-[#202020] font-bold text-sm px-[15px] pb-1 flex items-center justify-between">
                                     Scripts & Telegram Bots
-                                    <svg class="catergories__bottom__arrow transition-all duration-300 rotate-180"
-                                        width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 14L12.5 10L8 14" stroke="#202020" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                                    <span class="catergories__bottom__arrow transition-all duration-700">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
                                 </button>
-                                <p class="">Lorem ipsum dolor sit amet.</p>
+                                <div
+                                    class=" px-5 flex flex-col gap-1 max-h-0 overflow-hidden transition-all duration-700 ">
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                </div>
                             </div>
 
-
-                            <div
-                                class="catergories__bottom__select w-full border-[#0000005b] border-[1px] rounded-xl  transition-all duration-300 overflow-hidden h-[49px] pl-3  pr-4">
+                            <div class="border border-[#0000001A] rounded-xl pt-2 pb-1">
                                 <button
-                                    class="catergori__bottom__btn transition-all duration-300  py-3 w-full flex items-center justify-between font-bold text-sm text-[#202020] ">
+                                    class="catergories__bottom__select w-full text-[#202020] font-bold text-sm px-[15px] pb-1  flex items-center justify-between">
                                     Creating Telegram Bot
-                                    <svg class="catergories__bottom__arrow transition-all duration-300 rotate-180"
-                                        width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 14L12.5 10L8 14" stroke="#202020" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                                    <span class="catergories__bottom__arrow transition-all duration-700">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
                                 </button>
-                                <p class="">Lorem ipsum dolor sit amet.</p>
+                                <div
+                                    class=" px-5 flex flex-col gap-1 max-h-0 overflow-hidden transition-all duration-700 ">
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-[#575E6A] font-bold text-sm">Lorem ipsum dolor sit.</p>
+                                </div>
                             </div>
                         </div>
 
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                let categoriesBottomSelect = document.querySelectorAll(".catergories__bottom__select");
+
+                                categoriesBottomSelect.forEach(function (item) {
+                                    let arrow = item.querySelector(".catergories__bottom__arrow");
+
+                                    item.addEventListener("click", function () {
+                                        let content = item.nextElementSibling;
+                                        content.classList.toggle("max-h-0");
+                                        content.classList.toggle("max-h-[900px]");
+                                        arrow.classList.toggle("rotate-180");
+                                    });
+                                });
+                            });
+                        </script>
 
                     </div>
 
@@ -666,7 +722,7 @@
                 </div>
 
 
-                <div class="bg-[#fff] lg:w-[518px] h-full p-[10px] pt-4 rounded-3xl lg:inline-block hidden">
+                <div class="bg-[#fff] lg:max-w-[318px] max-width-318px w-full h-full p-[10px] pt-4 rounded-3xl lg:inline-block hidden">
                     <div class="flex items-center justify-between mb-[13px]">
                         <div class="flex items-center gap-2 pl-2">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
