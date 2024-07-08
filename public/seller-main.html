@@ -81,6 +81,18 @@
     flex-shrink: 0;
     width: 100%;
   }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #575E6A !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #B7C3D6 !important;
+    width: 8px;
+    height: 8px;
+  }
 </style>
 
 
@@ -539,8 +551,8 @@
             </div>
           </div>
 
-          <div class="bg-[#fff] md:block hidden rounded-3xl p-4">
-            <div class="relative main-swiper">
+          <div class="bg-white md:block hidden rounded-3xl p-4 relative">
+            <div class="swiper mySwiper2">
               <div class="flex justify-between items-center pr-4 mb-4">
                 <div class="flex items-center gap-2">
                   <div class="bg-[#FAFAFC] rounded-lg p-2">
@@ -560,64 +572,58 @@
                   <span class="text-[#202020] font-bold">Trending articles</span>
                 </div>
               </div>
-
-              <div class="overflow-hidden relative">
-                <div class="slidersss flex transition-transform duration-500">
-                  <div class="slides-swiperss flex gap-3">
-                    <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                    <div class="max-w-[148px]">
-                      <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
-                        estimate
-                        the cost of your work and not make a mistake</p>
-                      <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                        Read article
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
+  
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex gap-3">
+                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                  <div class="max-w-[148px]">
+                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                      estimate
+                      the cost of your work and not make a mistake</p>
+                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                      Read article
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
                   </div>
-                  <div class="slides-swiperss flex gap-3">
-                    <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                    <div class="max-w-[148px]">
-                      <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
-                        estimate
-                        the cost of your work and not make a mistake</p>
-                      <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                        Read article
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
+                </div>
+                <div class="swiper-slide flex gap-3">
+                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                  <div class="max-w-[148px]">
+                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                      estimate
+                      the cost of your work and not make a mistake</p>
+                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                      Read article
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
                   </div>
-                  <div class="slides-swiperss flex gap-3">
-                    <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                    <div class="max-w-[148px]">
-                      <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
-                        estimate
-                        the cost of your work and not make a mistake</p>
-                      <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                        Read article
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
+                </div>
+                <div class="swiper-slide flex gap-3">
+                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                  <div class="max-w-[148px]">
+                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                      estimate
+                      the cost of your work and not make a mistake</p>
+                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                      Read article
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
                   </div>
-                  <!-- Repeat slides as needed -->
                 </div>
               </div>
-
-              <!-- Pagination -->
-              <div class="slider-pagination absolute top-1 right-0 flex justify-center gap-2 mt-2"></div>
             </div>
+  
+            <div class="swiper-pagination2 absolute !top-5 pr-4 flex items-center justify-end w-full h-5 z-50"></div>
           </div>
-
-          <!-- Repeat the above structure for additional swipers -->
 
         </div>
 
@@ -1427,8 +1433,8 @@
         </div>
 
 
-        <div class="bg-[#fff] md:hidden rounded-3xl p-4">
-          <div class="relative main-swiper">
+        <div class="bg-white md:hidden rounded-3xl p-4 relative">
+          <div class="swiper mySwiper">
             <div class="flex justify-between items-center pr-4 mb-4">
               <div class="flex items-center gap-2">
                 <div class="bg-[#FAFAFC] rounded-lg p-2">
@@ -1449,63 +1455,60 @@
               </div>
             </div>
 
-            <div class="overflow-hidden relative">
-              <div class="slidersss flex transition-transform duration-500">
-                <div class="slides-swiperss flex gap-3">
-                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                  <div class="max-w-[148px]">
-                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to estimate
-                      the cost of your work and not make a mistake</p>
-                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                      Read article
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                  </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex gap-3">
+                <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                <div class="max-w-[148px]">
+                  <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                    estimate
+                    the cost of your work and not make a mistake</p>
+                  <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                    Read article
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <div class="slides-swiperss flex gap-3">
-                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                  <div class="max-w-[148px]">
-                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to estimate
-                      the cost of your work and not make a mistake</p>
-                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                      Read article
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                  </div>
+              </div>
+              <div class="swiper-slide flex gap-3">
+                <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                <div class="max-w-[148px]">
+                  <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                    estimate
+                    the cost of your work and not make a mistake</p>
+                  <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                    Read article
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <div class="slides-swiperss flex gap-3">
-                  <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
-                  <div class="max-w-[148px]">
-                    <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to estimate
-                      the cost of your work and not make a mistake</p>
-                    <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
-                      Read article
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                  </div>
+              </div>
+              <div class="swiper-slide flex gap-3">
+                <div class="bg-[#202020] w-[129px] h-[86px] rounded-2xl"></div>
+                <div class="max-w-[148px]">
+                  <p class="text-[#575E6A] text-sm font-bold line-clamp-2 mb-4">Freelancer price list: how to
+                    estimate
+                    the cost of your work and not make a mistake</p>
+                  <a href="#" class="flex items-center gap-2 hover:opacity-70 active:opacity-60">
+                    Read article
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 10.5L8.5 6L4.5 1.5" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <!-- Repeat slides as needed -->
               </div>
             </div>
-
-            <!-- Pagination -->
-            <div class="slider-pagination absolute top-1 right-0 flex justify-center gap-2 mt-2"></div>
           </div>
+
+          <div class="swiper-pagination1 absolute !top-5 pr-4 flex items-center justify-end w-full h-5 z-50"></div>
         </div>
-
-        <!-- Repeat the above structure for additional swipers -->
-
-
       </div>
+
+    </div>
 
     </div>
   </section>
@@ -1784,8 +1787,23 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination1",
+      },
+    });
+  </script>
+   <script>
+    var swiper = new Swiper(".mySwiper2", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination2",
       },
     });
   </script>
