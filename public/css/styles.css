@@ -810,9 +810,6 @@ video {
 .mb-\[22px\] {
   margin-bottom: 22px;
 }
-.mb-\[5\.5px\] {
-  margin-bottom: 5.5px;
-}
 .mb-\[54px\] {
   margin-bottom: 54px;
 }
@@ -884,6 +881,9 @@ video {
 }
 .mt-auto {
   margin-top: auto;
+}
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .line-clamp-1 {
   overflow: hidden;
@@ -1067,14 +1067,14 @@ video {
 .max-h-\[900px\] {
   max-height: 900px;
 }
+.max-h-40 {
+  max-height: 10rem;
+}
 .min-h-10 {
   min-height: 2.5rem;
 }
 .min-h-\[14px\] {
   min-height: 14px;
-}
-.min-h-\[843px\] {
-  min-height: 843px;
 }
 .w-1\/4 {
   width: 25%;
@@ -1171,6 +1171,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .min-w-\[14px\] {
   min-width: 14px;
@@ -1298,9 +1301,6 @@ video {
 .max-w-\[260px\] {
   max-width: 260px;
 }
-.max-w-\[269px\] {
-  max-width: 269px;
-}
 .max-w-\[26px\] {
   max-width: 26px;
 }
@@ -1379,9 +1379,6 @@ video {
 .max-w-\[647px\] {
   max-width: 647px;
 }
-.max-w-\[668px\] {
-  max-width: 668px;
-}
 .max-w-\[70px\] {
   max-width: 70px;
 }
@@ -1390,6 +1387,9 @@ video {
 }
 .max-w-\[736px\] {
   max-width: 736px;
+}
+.max-w-\[790px\] {
+  max-width: 790px;
 }
 .max-w-\[83px\] {
   max-width: 83px;
@@ -1414,15 +1414,6 @@ video {
 }
 .max-w-none {
   max-width: none;
-}
-.max-w-\[145px\] {
-  max-width: 145px;
-}
-.max-w-\[740px\] {
-  max-width: 740px;
-}
-.max-w-\[790px\] {
-  max-width: 790px;
 }
 .flex-shrink {
   flex-shrink: 1;
@@ -1651,11 +1642,17 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+.text-wrap {
+  text-wrap: wrap;
 }
 .text-nowrap {
   text-wrap: nowrap;
@@ -1813,6 +1810,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
 .border-b-\[\#4790FF\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(71 144 255 / var(--tw-border-opacity));
@@ -1917,6 +1918,10 @@ video {
 }
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\.\/img\/seller\/seller_main_page_Four_simple_steps_to_succeed_on_monday_bg_img\.png\'\)\] {
   background-image: url('./img/seller/seller_main_page_Four_simple_steps_to_succeed_on_monday_bg_img.png');
@@ -2826,40 +2831,12 @@ body {
   line-height: 1.25rem;
 }
 
-.placeholder\:text-xs::-moz-placeholder {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.placeholder\:text-xs::placeholder {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.placeholder\:font-bold::-moz-placeholder {
-  font-weight: 700;
-}
-
-.placeholder\:font-bold::placeholder {
-  font-weight: 700;
-}
-
 .placeholder\:font-medium::-moz-placeholder {
   font-weight: 500;
 }
 
 .placeholder\:font-medium::placeholder {
   font-weight: 500;
-}
-
-.placeholder\:text-\[\#4790FF\]::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(71 144 255 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-\[\#4790FF\]::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(71 144 255 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-\[\#9CA5B3\]::-moz-placeholder {
@@ -2919,6 +2896,11 @@ body {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover {
@@ -3154,10 +3136,6 @@ body {
     gap: 0.625rem;
   }
 
-  .max-md\:gap-3 {
-    gap: 0.75rem;
-  }
-
   .max-md\:gap-\[18px\] {
     gap: 18px;
   }
@@ -3298,10 +3276,6 @@ body {
 
   .sm\:max-h-\[188px\] {
     max-height: 188px;
-  }
-
-  .sm\:max-w-\[220px\] {
-    max-width: 220px;
   }
 
   .sm\:grid-cols-2 {
@@ -3529,16 +3503,16 @@ body {
     height: 63px;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:max-h-none {
     max-height: none;
   }
 
   .md\:min-h-\[216px\] {
     min-height: 216px;
-  }
-
-  .md\:min-h-\[817px\] {
-    min-height: 817px;
   }
 
   .md\:w-10 {
@@ -3847,11 +3821,6 @@ body {
   .md\:px-\[60px\] {
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  .md\:px-\[61px\] {
-    padding-left: 61px;
-    padding-right: 61px;
   }
 
   .md\:py-1 {
@@ -4168,6 +4137,10 @@ body {
 
   .lg\:max-w-\[121px\] {
     max-width: 121px;
+  }
+
+  .lg\:max-w-\[195px\] {
+    max-width: 195px;
   }
 
   .lg\:max-w-\[209px\] {
