@@ -882,9 +882,6 @@ video {
 .mt-auto {
   margin-top: auto;
 }
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -953,9 +950,6 @@ video {
 }
 .h-8 {
   height: 2rem;
-}
-.h-\[100px\] {
-  height: 100px;
 }
 .h-\[101px\] {
   height: 101px;
@@ -1067,9 +1061,6 @@ video {
 .max-h-\[900px\] {
   max-height: 900px;
 }
-.max-h-40 {
-  max-height: 10rem;
-}
 .min-h-10 {
   min-height: 2.5rem;
 }
@@ -1171,9 +1162,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .min-w-\[14px\] {
   min-width: 14px;
@@ -1288,6 +1276,9 @@ video {
 }
 .max-w-\[234px\] {
   max-width: 234px;
+}
+.max-w-\[245px\] {
+  max-width: 245px;
 }
 .max-w-\[248px\] {
   max-width: 248px;
@@ -1489,8 +1480,14 @@ video {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1642,17 +1639,11 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
-.overflow-y-auto {
-  overflow-y: auto;
-}
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 .scroll-smooth {
   scroll-behavior: smooth;
-}
-.text-wrap {
-  text-wrap: wrap;
 }
 .text-nowrap {
   text-wrap: nowrap;
@@ -1810,10 +1801,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
 .border-b-\[\#4790FF\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(71 144 255 / var(--tw-border-opacity));
@@ -1906,6 +1893,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 .bg-transparent {
   background-color: transparent;
 }
@@ -1918,10 +1909,6 @@ video {
 }
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
-}
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\.\/img\/seller\/seller_main_page_Four_simple_steps_to_succeed_on_monday_bg_img\.png\'\)\] {
   background-image: url('./img/seller/seller_main_page_Four_simple_steps_to_succeed_on_monday_bg_img.png');
@@ -2898,11 +2885,6 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gradient-to-r:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -3060,6 +3042,10 @@ body {
     display: flex;
   }
 
+  .max-md\:grid {
+    display: grid;
+  }
+
   .max-md\:hidden {
     display: none;
   }
@@ -3114,6 +3100,14 @@ body {
 
   .max-md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .max-md\:flex-col {
@@ -3305,11 +3299,6 @@ body {
 
   .sm\:pt-7 {
     padding-top: 1.75rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:text-base {
@@ -4031,6 +4020,10 @@ body {
     line-height: 1.25rem;
   }
 
+  .md\:leading-6 {
+    line-height: 1.5rem;
+  }
+
   .md\:leading-8 {
     line-height: 2rem;
   }
@@ -4346,6 +4339,15 @@ body {
     line-height: 2.25rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .lg\:text-\[32px\] {
     font-size: 32px;
   }
@@ -4363,6 +4365,10 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[48\.6px\] {
+    line-height: 48.6px;
   }
 }
 
