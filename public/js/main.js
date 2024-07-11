@@ -1,9 +1,32 @@
+
+
+let sectionSipmle = document.querySelectorAll('#sectionSipmle')
+let sectionEdit = document.querySelectorAll('#sectionEdit')
+let BtnEtdit = document.querySelectorAll('#BtnEtdit')
+let responsiveEditSection = document.querySelectorAll("#responsiveEditSection");
+let responsiveSection = document.querySelectorAll("#responsiveSection");
+let responsiveBtnEdit = document.querySelectorAll("#responsiveBtnEdit");
+
+
+BtnEtdit.forEach(function (item, index) {
+  item.addEventListener('click', function () {
+    sectionSipmle[index].classList.toggle("hidden")
+    sectionEdit[index].classList.toggle("hidden")
+  })
+})
+responsiveBtnEdit.forEach(function (item, index) {
+  item.addEventListener('click', function () {
+    responsiveEditSection[index].classList.toggle("hidden")
+    responsiveSection[index].classList.toggle("hidden")
+  })
+})
+
 let toggle__btn = document.querySelectorAll('#toggle__btn')
 let toggle_info = document.querySelectorAll('#toggle_info')
 toggle__btn.forEach(function (item, index) {
   item.addEventListener('click', function () {
     toggle_info[index].classList.toggle('max-h-[1600px]')
-    toggle_info[index].classList.toggle('max-h-0')    
+    toggle_info[index].classList.toggle('max-h-0')
     item.classList.toggle('bg-[#F1F3F9]')
     item.classList.toggle('bg-white')
   })
@@ -11,9 +34,11 @@ toggle__btn.forEach(function (item, index) {
 
 
 
+
 let sellectRadio = document.querySelectorAll("#sellectRadio");
 let serviceCard = document.querySelectorAll("#serviceCard");
 let serviceCardBig = document.querySelectorAll("#serviceCardBig");
+
 
 
 serviceCard.forEach(function (item, index) {
