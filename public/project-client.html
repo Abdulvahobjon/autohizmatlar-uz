@@ -921,10 +921,16 @@
                                 </svg>
                             </span>
                         </div>
-                        <div>
-                            <input
+                        <div class="relative">
+                            <input id="searchInput"
                                 class="bg-[#FAFAFC] rounded-xl placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#202020] font-medium text-sm outline-none border-none py-3 px-4 w-full"
                                 placeholder="Type the keyword" type="text">
+                            <div id="autocompleteResults"
+                                class="absolute bg-[#FFFFFF] rounded-2xl py-2.5 px-[15px] max-w-[245px] w-full"
+                                style="box-shadow: 5px 10px 40px 2px #0000000D; display: none;">
+                                <p class="text-[#B7C3D6] font-bold text-[10px] uppercase mb-2">suggested</p>
+                                <ul class="flex flex-col gap-1.5"></ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1476,8 +1482,8 @@
             </div>
            </div>
 
-            <div>
-                <div class="md:hidden w-full px-3">
+            <div class="mx-auto w-full" >
+                <div class="md:hidden w-full mx-auto px-3  pb-3">
                     <button id="categry_mobile_btn" class="flex items-center gap-0.5 mb-3 cursor-pointer">
                         <svg width="32" height="40" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1602,7 +1608,7 @@
                     </div>
                 </div>
     
-                <div class="w-full h-full flex flex-col">
+                <div class="w-full md:h-full flex flex-col">
                     <div
                         class="max-md:hidden flex items-start max-lg:gap-4 max-lg:flex-col justify-between  pl-[15px] mb-5 w-full">
                         <div class="max-xl:mr-1">
@@ -1632,8 +1638,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="lg:flex max-w-[668px] lg:text-left text-center items-center w-full  justify-between gap-3.5 border border-[#F2F2F2] rounded-2xl py-1.5 px-2 lg:pl-5 lg:py-3.5 lg:pr-3.5">
-                            <p class="font-bold text-xs lg:text-base text-[#575E6A] lg:mb-0 mb-3 ">Post your own task on the exchange and find a freelancer.</p>
+                        <div class="lg:flex max-w-[736px] lg:text-left text-center items-center w-full  justify-between gap-3.5 border border-[#F2F2F2] rounded-2xl py-1.5 px-2 lg:pl-5 lg:py-3.5 lg:pr-3.5">
+                            <p class="font-bold text-xs lg:text-base text-[#575E6A] lg:mb-0 mb-3 line-clamp-1">Post your own task on the exchange and find a freelancer.</p>
                             <button class="max-w-[190px] w-full inline-flex items-center gap-2 font-bold text-sm rounded-xl text-white px-5 py-3 lg:px-7 lg:py-[13.5px]"
                                 style=" background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);">
                                 Create new task
@@ -1666,7 +1672,7 @@
                                 </div>
                                 <div class="flex items-center bg-[#FAFAFC] justify-between
                              md:gap-[30px] mb-[15px] px-2.5 rounded-xl">
-                                    <p class="font-medium text-sm text-[#575E6A]">
+                                    <p class="font-medium text-sm text-[#575E6A] line-clamp-2">
                                         <span class="max-lg:hidden">
                                             Create a website based on the specifications and an existing example of this
                                             website.
@@ -1794,7 +1800,7 @@
                                 </div>
                                 <div class="flex items-center bg-[#FAFAFC] justify-between
                              md:gap-[30px] mb-[15px] px-2.5 rounded-xl">
-                                    <p class="font-medium text-sm text-[#575E6A]">
+                                    <p class="font-medium text-sm text-[#575E6A] line-clamp-2">
                                         <span class="max-lg:hidden">
                                             Create a website based on the specifications and an existing example of this
                                             website.
@@ -1922,7 +1928,7 @@
                                 </div>
                                 <div class="flex items-center bg-[#FAFAFC] justify-between
                              md:gap-[30px] mb-[15px] px-2.5 rounded-xl">
-                                    <p class="font-medium text-sm text-[#575E6A]">
+                                    <p class="font-medium text-sm text-[#575E6A] line-clamp-2">
                                         <span class="max-lg:hidden">
                                             Create a website based on the specifications and an existing example of this
                                             website.
@@ -2050,7 +2056,7 @@
                                 </div>
                                 <div class="flex items-center bg-[#FAFAFC] justify-between
                              md:gap-[30px] mb-[15px] px-2.5 rounded-xl">
-                                    <p class="font-medium text-sm text-[#575E6A]">
+                                    <p class="font-medium text-sm text-[#575E6A] line-clamp-2">
                                         <span class="max-lg:hidden">
                                             Create a website based on the specifications and an existing example of this
                                             website.
@@ -2168,8 +2174,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#"
-                            class="inline-flex md:bg-transparent bg-[#202020] justify-center items-center gap-[5px] border border-[#202020] md:border-[#AEB5BF] rounded-xl font-bold text-sm md:text-base text-white md:text-[#202020] py-3 px-[52.5px] max-md:hover:bg-transparent max-md:hover:text-[#202020] transition-all duration-300 hover:bg-black hover:border-black hover:text-white mx-auto">
+                        <a href="#" class="inline-flex md:max-w-[240px] w-full md:bg-transparent bg-[#202020] justify-center items-center gap-[5px] border border-[#202020] md:border-[#AEB5BF] rounded-xl font-bold text-sm md:text-base text-white md:text-[#202020] py-3 px-[52.5px] max-md:hover:bg-transparent max-md:hover:text-[#202020] transition-all duration-300 hover:bg-black hover:border-black hover:text-white mx-auto">
                             Show More
                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.67285 13.4453H18.4315H7.67285Z" fill="currentColor" />
@@ -2533,6 +2538,7 @@
     <script src="./js/app.js"></script>
     <script src="./js/project-client.js"></script>
     <script src="./js/project-client-mobile.js"></script>
+    <script src="./js/project-client-search.js"></script>
 
 </body>
 
