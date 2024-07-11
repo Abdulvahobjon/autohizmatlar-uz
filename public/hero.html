@@ -835,7 +835,83 @@
       <div class="w-full max-w-[1400px] mx-auto lg:px-5  md:block hidden">
         <h2 class="font-bold text-base md:text-2xl leading-5 md:leading-8 mb-4">Services</h2>
         <div class="w-full bg-white rounded-3xl">
-          <table class="w-full ">
+          <table class="w-full " id="sectionSipmle">
+            <thead>
+              <tr>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE RANGE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE PER HOUR
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">MINIMAL BUDGET
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody class="border-y border-[#f2f2f2]">
+              <tr>
+                <td rowspan="2"
+                  class="pb-[29px] pt-[21px] max-w-[200px] lg:max-w-[240px] pr-4 lg:pr-14 pl-5 lg:pl-10  border-r border-[#f2f2f2]">
+                  <div class="relative ">
+                    <div class="cursor-pointer text-xs leading-4 uppercase border rounded-xl flex items-center gap-2 p-2 ">
+                      <span class="w-10 h-10 flex items-center justify-center border rounded-xl">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.655 4.90498L12.3525 2.60248C11.6475 1.89748 10.695 1.50751 9.69749 1.50751H6C3.75 1.50751 2.25 3.00751 2.25 5.25751V12.7575C2.25 15.0075 3.75 16.5075 6 16.5075H12C14.25 16.5075 15.75 15.0075 15.75 12.7575V7.56001C15.75 6.55501 15.3525 5.60248 14.655 4.90498Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="lg:max-w-[209px] font-bold">Creation and improvement of sites</span>
+                    </div>
+                    <span
+                      class="absolute -bottom-12 left-5 inline-block rounded-bl-lg w-[14px] h-[33px] border-l border-b"></span>
+                  </div>
+                  <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                </td>
+                <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center  border-r border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]"> <span
+                    class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td
+                  class="pl-4 lg:pl-10 md:w-[150px] lg:w-[284px]  border-r border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  Lorem ipusm</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full hidden" id="sectionEdit">
             <thead>
               <tr>
                 <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
@@ -1047,13 +1123,14 @@
                 </tr>
             </tbody>
           </table>
-    
-          <div class="flex justify-end py-4 pr-6">
-            <button class="bg-[#edf4f4] py-[14px] px-[30px] rounded-xl ">
+          <div class="flex justify-end py-4 pr-6" >
+            <button id="BtnEtdit" class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
               
-
-              Edit prices
-            </button>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              Edit prices</button>
           </div>
         </div>
       </div>
@@ -1144,7 +1221,7 @@
                 </ul>
               </div>
             </div>
-            <div class="p-4 rounded-xl bg-white">
+            <div class="p-4 rounded-xl bg-white" id="responsiveSection">
               <ul>
                 <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
                   Service
@@ -1183,9 +1260,46 @@
                 </li>
               </ul>
             </div>
+             <div id="responsiveEditSection" class="p-4 rounded-xl bg-white hidden">
+              <ul>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Service
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  Improving and adjusting the site
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Description
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price range
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="text-[#9CA5B3] uppercase">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price per hour
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Minimal budget
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4" id="responsiveBtnEdit">
             <span>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1207,7 +1321,7 @@
       <div class="w-full max-w-[1400px] mx-auto lg:px-5  md:block hidden">
         <h2 class="font-bold text-base md:text-2xl leading-5 md:leading-8 mb-4">Certificates</h2>
         <div class="w-full bg-white rounded-3xl">
-          <table class="w-full ">
+          <table class="w-full " id="sectionSipmle">
             <thead>
               <tr>
                 <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
@@ -1283,14 +1397,225 @@
               </tr>
             </tbody>
           </table>
-    
+          <table class="w-full hidden" id="sectionEdit">
+            <thead>
+              <tr>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE RANGE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE PER HOUR
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">MINIMAL BUDGET
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody class="border-y border-[#f2f2f2] ">
+              <tr>
+                <td rowspan="5"
+                  class="pb-[29px] pt-[21px] max-w-[200px] lg:max-w-[240px] pr-4 lg:pr-14 pl-5 lg:pl-10  border-r border-[#f2f2f2]">
+                  <div class="relative ">
+                    <div class="cursor-pointer text-xs leading-4 uppercase border rounded-xl flex items-center gap-2 p-2 ">
+                      <span class="w-10 h-10 flex items-center justify-center border rounded-xl">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.655 4.90498L12.3525 2.60248C11.6475 1.89748 10.695 1.50751 9.69749 1.50751H6C3.75 1.50751 2.25 3.00751 2.25 5.25751V12.7575C2.25 15.0075 3.75 16.5075 6 16.5075H12C14.25 16.5075 15.75 15.0075 15.75 12.7575V7.56001C15.75 6.55501 15.3525 5.60248 14.655 4.90498Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="lg:max-w-[209px] font-bold">Creation and improvement of sites</span>
+                    </div>
+                    <span
+                      class="absolute -bottom-12 left-5 inline-block rounded-bl-lg w-[14px] h-[33px] border-l border-b"></span>
+                  </div>
+                  <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+              </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
           <div class="flex justify-end py-4 pr-6" >
-            <button class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
+            <button id="BtnEtdit" class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
               
-<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
               Edit prices</button>
           </div>
         </div>
@@ -1382,7 +1707,7 @@
                 </ul>
               </div>
             </div>
-            <div class="p-4 rounded-xl bg-white">
+            <div class="p-4 rounded-xl bg-white" id="responsiveSection">
               <ul>
                 <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
                   Service
@@ -1421,9 +1746,46 @@
                 </li>
               </ul>
             </div>
+             <div id="responsiveEditSection" class="p-4 rounded-xl bg-white hidden">
+              <ul>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Service
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  Improving and adjusting the site
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Description
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price range
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="text-[#9CA5B3] uppercase">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price per hour
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Minimal budget
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4" id="responsiveBtnEdit">
             <span>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1445,7 +1807,7 @@
       <div class="w-full max-w-[1400px] mx-auto lg:px-5  md:block hidden">
         <h2 class="font-bold text-base md:text-2xl leading-5 md:leading-8 mb-4">Portfolio</h2>
         <div class="w-full bg-white rounded-3xl">
-          <table class="w-full ">
+          <table class="w-full " id="sectionSipmle">
             <thead>
               <tr>
                 <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
@@ -1521,10 +1883,221 @@
               </tr>
             </tbody>
           </table>
-    
-          <div class="flex justify-end py-4 pr-6">
-            <button class="bg-[#edf4f4] py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
-                
+          <table class="w-full hidden" id="sectionEdit">
+            <thead>
+              <tr>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE RANGE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE PER HOUR
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">MINIMAL BUDGET
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody class="border-y border-[#f2f2f2] ">
+              <tr>
+                <td rowspan="5"
+                  class="pb-[29px] pt-[21px] max-w-[200px] lg:max-w-[240px] pr-4 lg:pr-14 pl-5 lg:pl-10  border-r border-[#f2f2f2]">
+                  <div class="relative ">
+                    <div class="cursor-pointer text-xs leading-4 uppercase border rounded-xl flex items-center gap-2 p-2 ">
+                      <span class="w-10 h-10 flex items-center justify-center border rounded-xl">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.655 4.90498L12.3525 2.60248C11.6475 1.89748 10.695 1.50751 9.69749 1.50751H6C3.75 1.50751 2.25 3.00751 2.25 5.25751V12.7575C2.25 15.0075 3.75 16.5075 6 16.5075H12C14.25 16.5075 15.75 15.0075 15.75 12.7575V7.56001C15.75 6.55501 15.3525 5.60248 14.655 4.90498Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="lg:max-w-[209px] font-bold">Creation and improvement of sites</span>
+                    </div>
+                    <span
+                      class="absolute -bottom-12 left-5 inline-block rounded-bl-lg w-[14px] h-[33px] border-l border-b"></span>
+                  </div>
+                  <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+              </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <div class="flex justify-end py-4 pr-6" >
+            <button id="BtnEtdit" class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
+              
 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1620,7 +2193,7 @@
                 </ul>
               </div>
             </div>
-            <div class="p-4 rounded-xl bg-white">
+            <div class="p-4 rounded-xl bg-white" id="responsiveSection">
               <ul>
                 <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
                   Service
@@ -1659,9 +2232,46 @@
                 </li>
               </ul>
             </div>
+             <div id="responsiveEditSection" class="p-4 rounded-xl bg-white hidden">
+              <ul>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Service
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  Improving and adjusting the site
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Description
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price range
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="text-[#9CA5B3] uppercase">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price per hour
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Minimal budget
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4" id="responsiveBtnEdit">
             <span>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1683,7 +2293,7 @@
       <div class="w-full max-w-[1400px] mx-auto lg:px-5  md:block hidden">
         <h2 class="font-bold text-base md:text-2xl leading-5 md:leading-8 mb-4">Reviews</h2>
         <div class="w-full bg-white rounded-3xl">
-          <table class="w-full ">
+          <table class="w-full " id="sectionSipmle">
             <thead>
               <tr>
                 <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
@@ -1759,14 +2369,225 @@
               </tr>
             </tbody>
           </table>
-    
-          <div class="flex justify-end py-4 pr-6">
-            <button class="bg-[#edf4f4] py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
-                
-<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+          <table class="w-full hidden" id="sectionEdit">
+            <thead>
+              <tr>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE RANGE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE PER HOUR
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">MINIMAL BUDGET
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody class="border-y border-[#f2f2f2] ">
+              <tr>
+                <td rowspan="5"
+                  class="pb-[29px] pt-[21px] max-w-[200px] lg:max-w-[240px] pr-4 lg:pr-14 pl-5 lg:pl-10  border-r border-[#f2f2f2]">
+                  <div class="relative ">
+                    <div class="cursor-pointer text-xs leading-4 uppercase border rounded-xl flex items-center gap-2 p-2 ">
+                      <span class="w-10 h-10 flex items-center justify-center border rounded-xl">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.655 4.90498L12.3525 2.60248C11.6475 1.89748 10.695 1.50751 9.69749 1.50751H6C3.75 1.50751 2.25 3.00751 2.25 5.25751V12.7575C2.25 15.0075 3.75 16.5075 6 16.5075H12C14.25 16.5075 15.75 15.0075 15.75 12.7575V7.56001C15.75 6.55501 15.3525 5.60248 14.655 4.90498Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="lg:max-w-[209px] font-bold">Creation and improvement of sites</span>
+                    </div>
+                    <span
+                      class="absolute -bottom-12 left-5 inline-block rounded-bl-lg w-[14px] h-[33px] border-l border-b"></span>
+                  </div>
+                  <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+              </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <div class="flex justify-end py-4 pr-6" >
+            <button id="BtnEtdit" class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
+              
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
               Edit prices</button>
           </div>
         </div>
@@ -1858,7 +2679,7 @@
                 </ul>
               </div>
             </div>
-            <div class="p-4 rounded-xl bg-white">
+            <div class="p-4 rounded-xl bg-white" id="responsiveSection">
               <ul>
                 <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
                   Service
@@ -1897,9 +2718,46 @@
                 </li>
               </ul>
             </div>
+             <div id="responsiveEditSection" class="p-4 rounded-xl bg-white hidden">
+              <ul>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Service
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  Improving and adjusting the site
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Description
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price range
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="text-[#9CA5B3] uppercase">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price per hour
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Minimal budget
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4" id="responsiveBtnEdit">
             <span>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -1921,7 +2779,7 @@
       <div class="w-full max-w-[1400px] mx-auto lg:px-5  md:block hidden">
         <h2 class="font-bold text-base md:text-2xl leading-5 md:leading-8 mb-4">Prices for services</h2>
         <div class="w-full bg-white rounded-3xl">
-          <table class="w-full ">
+          <table class="w-full " id="sectionSipmle">
             <thead>
               <tr>
                 <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
@@ -1997,10 +2855,221 @@
               </tr>
             </tbody>
           </table>
-    
-          <div class="flex justify-end py-4 pr-6">
-            <button class="bg-[#edf4f4] py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
-                
+          <table class="w-full hidden" id="sectionEdit">
+            <thead>
+              <tr>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-left pl-10">SERVICE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE RANGE</th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">PRICE PER HOUR
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">MINIMAL BUDGET
+                </th>
+                <th class="text-bold text-sm leading-[18px] text-[#9CA5B3] pt-[30px] pb-4 text-center">DESCRIPTION</th>
+              </tr>
+            </thead>
+            <tbody class="border-y border-[#f2f2f2] ">
+              <tr>
+                <td rowspan="5"
+                  class="pb-[29px] pt-[21px] max-w-[200px] lg:max-w-[240px] pr-4 lg:pr-14 pl-5 lg:pl-10  border-r border-[#f2f2f2]">
+                  <div class="relative ">
+                    <div class="cursor-pointer text-xs leading-4 uppercase border rounded-xl flex items-center gap-2 p-2 ">
+                      <span class="w-10 h-10 flex items-center justify-center border rounded-xl">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.655 4.90498L12.3525 2.60248C11.6475 1.89748 10.695 1.50751 9.69749 1.50751H6C3.75 1.50751 2.25 3.00751 2.25 5.25751V12.7575C2.25 15.0075 3.75 16.5075 6 16.5075H12C14.25 16.5075 15.75 15.0075 15.75 12.7575V7.56001C15.75 6.55501 15.3525 5.60248 14.655 4.90498Z"
+                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="lg:max-w-[209px] font-bold">Creation and improvement of sites</span>
+                    </div>
+                    <span
+                      class="absolute -bottom-12 left-5 inline-block rounded-bl-lg w-[14px] h-[33px] border-l border-b"></span>
+                  </div>
+                  <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                    <span
+                    class="font-bold text-sm leading-[19px] max-w-[224px] text-[#202020] pl-12 pt-8 inline-block">Improving
+                    and adjusting the site</span>
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+                <td class="text-center h-[90px] border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                  <span class="text-[#202020]">100000</span> -
+                  <span class="text-[#202020]">150000</span>
+                  UZS
+                </td>
+              </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-y border-[#f2f2f2]">
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[196px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text"> -
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[90px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] max-w-[90px] border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[120px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                       <p class="text-left"> UZS</p>
+                    </div>
+                  </td>
+                  <td class="text-center border-r px-1 border-[#f2f2f2] font-bold text-base leading-[22px] text-[#9CA5B3]">
+                    <div class="max-w-[155px] mx-auto ">
+                      <div class="flex gap-[5px] mb-[2px] items-center justify-center">
+                        <input  class="text-[#202020] w-full border border-[#AEB5BF] rounded-lg py-2 text-center text-sm leading-[16.2px]" type="text">
+                      </div>
+                      <p class="select-none opacity-0" aria-disabled="true">UZS</p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <div class="flex justify-end py-4 pr-6" >
+            <button id="BtnEtdit" class=" py-[14px] px-[30px] rounded-xl items-center flex gap-1.5 bg-[#EDF4FF] text-[#4790FF]">
+              
 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1.5 9.66001V8.34001C1.5 7.56001 2.1375 6.91501 2.925 6.91501C4.2825 6.91501 4.8375 5.95501 4.155 4.77751C3.765 4.10251 3.9975 3.22501 4.68 2.83501L5.9775 2.09251C6.57 1.74001 7.335 1.95001 7.6875 2.54251L7.77 2.68501C8.445 3.86251 9.555 3.86251 10.2375 2.68501L10.32 2.54251C10.6725 1.95001 11.4375 1.74001 12.03 2.09251L13.3275 2.83501C14.01 3.22501 14.2425 4.10251 13.8525 4.77751C13.17 5.95501 13.725 6.91501 15.0825 6.91501C15.8625 6.91501 16.5075 7.55251 16.5075 8.34001V9.66001C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.66001Z" stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2096,7 +3165,7 @@
                 </ul>
               </div>
             </div>
-            <div class="p-4 rounded-xl bg-white">
+            <div class="p-4 rounded-xl bg-white" id="responsiveSection">
               <ul>
                 <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
                   Service
@@ -2135,9 +3204,46 @@
                 </li>
               </ul>
             </div>
+             <div id="responsiveEditSection" class="p-4 rounded-xl bg-white hidden">
+              <ul>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Service
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  Improving and adjusting the site
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Description
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price range
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="text-[#9CA5B3] uppercase">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Price per hour
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                                    <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">
+                  Minimal budget
+                </p>
+                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">
+                  <input type="text" value="" class="block bg-[#FAFAFC] rounded-[8px] w-full p-1 mb-[2px] h-[30px]">
+                  <span class="uppercase text-[#9CA5B3]">UZS</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+            class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4" id="responsiveBtnEdit">
             <span>
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -2159,6 +3265,28 @@
 
   <script>
 
+
+  let sectionSipmle = document.querySelectorAll('#sectionSipmle')
+  let sectionEdit = document.querySelectorAll('#sectionEdit')
+    let BtnEtdit = document.querySelectorAll('#BtnEtdit')
+    let responsiveEditSection = document.querySelectorAll("#responsiveEditSection");
+    let responsiveSection = document.querySelectorAll("#responsiveSection");
+    let responsiveBtnEdit = document.querySelectorAll("#responsiveBtnEdit");
+    
+    
+    BtnEtdit.forEach(function(item , index){
+        item.addEventListener('click' , function(){
+          sectionSipmle[index].classList.toggle("hidden")
+          sectionEdit[index].classList.toggle("hidden")
+        })
+    })
+    responsiveBtnEdit.forEach(function(item , index){
+      item.addEventListener('click' , function(){
+        responsiveEditSection[index].classList.toggle("hidden")
+        responsiveSection[index].classList.toggle("hidden")
+      })
+  })
+
     let toggle__btn = document.querySelectorAll('#toggle__btn')
     let toggle_info = document.querySelectorAll('#toggle_info')
     toggle__btn.forEach(function (item, index) {
@@ -2170,11 +3298,13 @@
       })
     })
 
+    
 
 
     let sellectRadio = document.querySelectorAll("#sellectRadio");
     let serviceCard = document.querySelectorAll("#serviceCard");
     let serviceCardBig = document.querySelectorAll("#serviceCardBig");
+   
 
 
     serviceCard.forEach(function (item, index) {
